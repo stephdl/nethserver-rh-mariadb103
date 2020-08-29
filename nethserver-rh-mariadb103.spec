@@ -1,6 +1,6 @@
 Summary: NethServer mariadb103 configuration and templates.
 Name: nethserver-rh-mariadb103
-Version: 0.0.2
+Version: 0.0.3
 Release: 1%{?dist}
 License: GPL
 Group: Networking/Daemons
@@ -63,5 +63,10 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
-* Sun Apr 12  2020 stephane de Labrusse <stephdl@de-labrusse.fr> 0.0.2
+
+* Sat Aug 29 2020 stephane de labrusse <stephdl@de-labrusse.fr>
+- Removed Alias link mysql/mysqld of default systemd service
+- Expand phpmyadmin-save if installed
+
+* Sun Apr 12 2020 stephane de Labrusse <stephdl@de-labrusse.fr> 0.0.2
 - Release for rh-mariadb103
